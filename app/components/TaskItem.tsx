@@ -1,4 +1,8 @@
 "use client";
+import { useState } from "react";
+import { Task } from "../types/task";
+import { updateDoc, deleteDoc, doc } from "firebase/firestore";
+import { db } from "../lib/firebase";
 
 interface TaskItemProps {
   task: Task;
